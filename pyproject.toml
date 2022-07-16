@@ -5,6 +5,7 @@ description = "A modern module for colored output."
 authors = ["Exenifix"]
 license = "MIT"
 repository = "https://github.com/Exenifix/exencolor"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
