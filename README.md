@@ -16,7 +16,7 @@ from exencolor import colored, Color
 
 print(colored("Hello World!", foreground=Color.GREEN))
 ```
-![output](.github/img/foreground.png)
+![output](https://github.com/Exenifix/exencolor/blob/master/.github/img/foreground.png?raw=true)
 
 ### Background
 
@@ -25,7 +25,7 @@ from exencolor import colored, Color
 
 print(colored("Hello World!", background=Color.BLUE))
 ```
-![output](.github/img/background.png)
+![output](https://github.com/Exenifix/exencolor/blob/master/.github/img/background.png?raw=true)
 
 ### Decorations
 
@@ -34,14 +34,14 @@ from exencolor import colored, Decoration
 
 print(colored("Hello World!", decoration=Decoration.UNDERLINE))
 ```
-![output](.github/img/deco1.png)
+![output](https://github.com/Exenifix/exencolor/blob/master/.github/img/deco1.png?raw=true)
 
 ```python
 from exencolor import colored, Decoration
 
 print(colored("Hello World!", decorations=[Decoration.UNDERLINE, Decoration.BOLD]))
 ```
-![output](.github/img/deco2.png)
+![output](https://github.com/Exenifix/exencolor/blob/master/.github/img/deco2.png?raw=true)
 
 ### Combined
 
@@ -50,4 +50,4 @@ from exencolor import colored, Decoration, Color
 
 print(colored("Hello World!", foreground=Color.BRIGHT_CYAN, background=Color.BRIGHT_YELLOW, decoration=Decoration.UNDERLINE))
 ```
-![output](.github/img/combined.png)
+![output](https://github.com/Exenifix/exencolor/blob/master/.github/img/combined.png?raw=true)
