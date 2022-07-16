@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "exencolor"
+version = "1.0"
+description = "A modern module for colored output."
+authors = ["Exenifix"]
+license = "MIT"
+repository = "https://github.com/Exenifix/exencolor"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
