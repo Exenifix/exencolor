@@ -27,7 +27,9 @@ def colored(
     :type decorations: Sequence[Decoration]
     :return: A colored obj.
     """
-    decorations = decorations or ([decoration] if decoration is not None else [])
+    decorations = decorations or []
+    if decoration is not None:
+        decorations.append(decoration)
     if any(not isinstance(i, Decoration) for i in decorations):
         raise TypeError("Decorations must be of type `Decoration`.")
 
