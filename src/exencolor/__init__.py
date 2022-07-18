@@ -42,7 +42,7 @@ def colored(
     for deco in decorations:
         text += f"\u001b[{deco.value}m"
 
-    return text + obj + "\u001b[0m"
+    return text + str(obj) + "\u001b[0m"
 
 
 def _get_color(value: Color | int) -> int:
