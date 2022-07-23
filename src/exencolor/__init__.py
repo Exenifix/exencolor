@@ -33,6 +33,8 @@ def colored(
     if any(not isinstance(i, Decoration) for i in decorations):
         raise TypeError("Decorations must be of type `Decoration`.")
 
+    obj = str(obj)
+    obj = obj.replace("\u001b[0m", "")  # to prevent unexpected reset
     text = ""
 
     if foreground is not None:
@@ -44,7 +46,7 @@ def colored(
     for deco in decorations:
         text += f"\u001b[{deco.value}m"
 
-    return text + str(obj) + "\u001b[0m"
+    return text + obj + "\u001b[0m"
 
 
 def _get_color(value: Color | int) -> int:
