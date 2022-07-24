@@ -6,10 +6,10 @@ from .enums import *
 
 def colored(
     obj: Any,
-    *,
     foreground: Color | int = None,
     background: Color | int = None,
     decoration: Decoration = None,
+    *,
     decorations: Sequence[Decoration] = None,
 ) -> str:
     """
@@ -26,6 +26,7 @@ def colored(
     :param decorations: A sequence of decorations to apply to text. If `decoration` is also provided, it is included.
     :type decorations: Sequence[Decoration]
     :return: A colored obj.
+    :raise TypeError: got an argument of unexpected type.
     """
     decorations = decorations or []
     if decoration is not None:
