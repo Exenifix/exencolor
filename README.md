@@ -1,6 +1,8 @@
 # ExenColor
 A modern module for colored output.
 
+[!tests](https://github.com/Exenifix/exencolor/workflows/actions/test.yml/badge.svg)
+
 ## Installation
 The module is available for installation from PyPI via pip:
 ```shell
