@@ -3,6 +3,8 @@ from typing import Any, Sequence
 
 from .enums import *
 
+_RESET = "\u001b[0m"
+
 
 def colored(
     obj: Any,
@@ -35,7 +37,6 @@ def colored(
         raise TypeError("Decorations must be of type `Decoration`.")
 
     obj = str(obj)
-    obj = obj.replace("\u001b[0m", "")  # to prevent unexpected reset
     text = ""
 
     if foreground is not None:
@@ -47,7 +48,9 @@ def colored(
     for deco in decorations:
         text += f"\u001b[{deco.value}m"
 
-    return text + obj + "\u001b[0m"
+    if obj.endswith(_RESET):
+        obj += text
+    return text + obj + _RESET
 
 
 def _get_color(value: Color | int) -> int:
