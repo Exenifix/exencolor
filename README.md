@@ -1,4 +1,4 @@
-[!tests](https://github.com/Exenifix/exencolor/workflows/actions/test.yml/badge.svg)
+[!tests](https://github.com/Exenifix/exencolor/actions/workflows/test.yml/badge.svg)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/exencolor)
 ![License](https://img.shields.io/github/license/Exenifix/exencolor)
 ![PyPI - Version](https://img.shields.io/pypi/v/exencolor)
